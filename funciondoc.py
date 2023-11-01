@@ -26,6 +26,19 @@ def palindromo (senctence: str) -> bool:
     Returns:
         _type_: _description_
     '''
+    
+    Dentro del docstring podemos generar pruebas para ver que la funcion esta funcionanod
+    Se le puede dar cualquier nombre y tenemos que simular que estamos en el shell interactivo de python
+    Dando la entrada con:
+    
+    #>>> funcion(Argumentos)
+    #respuesta esperada
+    
+    Examples:
+    
+    >>> palindromo('anita lava la tina')
+    True
+    
     """
     
 
