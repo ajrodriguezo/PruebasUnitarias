@@ -48,17 +48,15 @@ def palindromo(senctence: str) -> bool:
 
 
 class User:
-    """Permite representar un usuario."""
+    """Permite representar un usuario"""
     
-    
-    def __init__(self, username: str, pasword: str) -> None:
-        """permite intancioar un objeto d etipo user
+    def __init__(self, username: str, password: str) -> None:
+        """permite instancias un objeto de tipo user
+        
         Args:
-            username (str): el username del usuario.
-            password (str): El password del usuario.
+            username (str): El username del usuario
+            password (str): El password del usuario
         """
-    
-    self.username = username
-    self.password = password
-    
+        self.username = username
+        self.password = password
     
