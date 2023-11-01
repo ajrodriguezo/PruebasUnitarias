@@ -39,6 +39,11 @@ def palindromo (senctence: str) -> bool:
     >>> palindromo('anita lava la tina')
     True
     
+    #en consola se ejecuta python -m doctest funcion.py 
+    si no pasa nada esta bien, pero si queremos mas informacion ejecutamos 
+    python -m doctest funcion.py -v
+    
+    nos da una vista detallada de que se ejecuto y como salio la prueba
     """
     
 
