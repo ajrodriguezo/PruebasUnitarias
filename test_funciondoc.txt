@@ -8,4 +8,4 @@ Flase
 
 >>> sentence = 'Oso'
 >>> palindromo(sentence)
-Flase
+True
