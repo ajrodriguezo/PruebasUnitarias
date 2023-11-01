@@ -34,10 +34,7 @@ def palindromo(senctence: str) -> bool:
     #>>> funcion(Argumentos)
     #respuesta esperada
 
-    Examples:
 
-    >>> palindromo('anita lava la tina')
-    True
 
     #en consola se ejecuta python -m doctest funcion.py 
     si no pasa nada esta bien, pero si queremos mas informacion ejecutamos 

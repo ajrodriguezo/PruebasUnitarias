@@ -1,0 +1,11 @@
+>>> from funciondoc import palindromo
+
+>>> palindromo('anita lava la tina')
+True
+
+>>> palindromo ('codigoFacilito')
+Flase
+
+>>> sentence = 'Oso'
+>>> palindromo(sentence)
+Flase
