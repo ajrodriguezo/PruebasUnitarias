@@ -1,10 +1,11 @@
 >>> from funciondoc import palindromo
+>>> from funciondoc import User
 
 >>> palindromo('anita lava la tina')
 True
 
 >>> palindromo ('codigoFacilito')
-Flase
+False
 
 >>> sentence = 'Oso'
 >>> palindromo(sentence)
