@@ -1,5 +1,3 @@
-# Docstring
-
 def palindromo(senctence: str) -> bool:
     """Esta funcion permite conocer si un string
     es un palindromo , o no, es decir, que se puede 

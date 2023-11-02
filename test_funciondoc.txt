@@ -13,7 +13,7 @@ True
 >>> username = 'andres'
 >>> password = 'clave123'
 
->>> user = User(username,password)
+>>> user = User(username, password)
 
 >>> user.username == username
 True
