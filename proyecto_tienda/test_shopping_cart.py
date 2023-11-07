@@ -6,11 +6,11 @@ class TestShoppingCart(unittest.TestCase):
     
     @classmethod
     def setUpClass(cls):
-        pass
+        print('>>> El metodo de clase setUpClass se ejecuta antes de todas las pruebas')
     
     @classmethod
     def tearDownClass(cls):
-        pass
+        print('>>> El metodo de clase tearDownClass se ejecuta despues de todas las pruebas')
     
     def setUp(self):
         #print('>>> el metodo setUp se ejecuta antes de cada una de las pruebas')
