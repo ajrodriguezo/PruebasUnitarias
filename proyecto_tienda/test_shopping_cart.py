@@ -1,6 +1,7 @@
 import unittest
 
 from product import Product
+from product import ProductDiscountError
 from shopping_car import ShoppingCart
 
 class TestShoppingCart(unittest.TestCase):
@@ -61,7 +62,26 @@ class TestShoppingCart(unittest.TestCase):
     
     def test_product_not_in_shopping_cart(self):
         self.shopping_cart_2.remove_product(self.smarthphone)
-        self.assertNotIn(self.smarthphone, self.shopping_cart_2)    
+        self.lista = self.shopping_cart_2.products
+        self.assertNotIn(self.smarthphone, self.lista)    
+    
+    def test_discount_error(self):
+        with self.assertRaises(ProductDiscountError):
+            Product(name= 'Example', price= 10.0, discount= 11.0)
+
+    def test_total_shopping_cart(self):
+        self.shopping_cart_1.add_product(Product(name= 'libro',price= 15.0 ))
+        self.shopping_cart_1.add_product(Product(name= 'camara',price= 700, discount= 70 ))
+
+        self.assertGreater(self.shopping_cart_1.totlal, 0) # nos permite evaluar x > algo
+        self.assertLess(self.shopping_cart_1.totlal, 1000) # nos permite evualr x < algo 
+        self.assertEqual(self.shopping_cart_1.totlal, 645.00)
+        #assertGreatEqual mayor o igula
+        #asserLessEqual Menor o igual 
         
+    def test_total_empty_shopping_cart(self):
+        self.assertEqual(self.shopping_cart_1.totlal, 0.0)
+        
+
 if __name__ == '__main__':
     unittest.main()

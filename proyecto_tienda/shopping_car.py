@@ -3,11 +3,16 @@ class ShoppingCart:
     
     def __init__(self) -> None:
         #self.__products = list()
-        self.__products: List[Product] =[]
+        self.__products: list[Product] =[]
     
     @property    
     def products(self):
         return(self.__products.copy())
+    
+    @property
+    def totlal(self) -> float:
+        return sum([(product.price - product.discount)for product in self.__products])
+        
     
     def add_product(self, product: Product) -> None:
         self.__products.append(product)
