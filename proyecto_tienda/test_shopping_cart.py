@@ -4,6 +4,9 @@ from product import Product
 from product import ProductDiscountError
 from shopping_car import ShoppingCart
 
+def is_available_to_skip():
+    return False
+
 class TestShoppingCart(unittest.TestCase):
     
     @classmethod
@@ -81,7 +84,17 @@ class TestShoppingCart(unittest.TestCase):
         
     def test_total_empty_shopping_cart(self):
         self.assertEqual(self.shopping_cart_1.totlal, 0.0)
-        
+    
+    @unittest.skip('La prueba no cumple con los requerimientos necesarios')    
+    def test_skip_example(self):
+        self.assertEqual(1,1)
+    
+    
+    #skipIf -> evaluia sobre verdadero
+    #shipunLess -> evalua sobre falso
+    @unittest.skipIf(is_available_to_skip(),'No se cuenta con todos los requerimientos' )
+    def test_skip_example_two(self):
+        pass
 
 if __name__ == '__main__':
     unittest.main()
