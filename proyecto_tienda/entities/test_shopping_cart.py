@@ -95,6 +95,9 @@ class TestShoppingCart(unittest.TestCase):
     @unittest.skipIf(is_available_to_skip(),'No se cuenta con todos los requerimientos' )
     def test_skip_example_two(self):
         pass
+    
+    def test_code_product(self):
+        self.assertRegex(self.smarthphone.code, self.smarthphone.name)
 
 if __name__ == '__main__':
     unittest.main()
