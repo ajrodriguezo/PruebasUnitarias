@@ -16,3 +16,4 @@ MainThread - INFO - 2023/11/14 15:22 - Message:30
 MainThread - DEBUG - 2023/11/14 15:23:13 - Message:antes del llamdo
 MainThread - DEBUG - 2023/11/14 15:23:13 - Message:antes de sumar
 MainThread - INFO - 2023/11/14 15:23:13 - Message:30
+
