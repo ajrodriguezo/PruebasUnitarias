@@ -6,7 +6,7 @@ class DueDateError(Exception):
 
 class Task():
     
-    def __init__(self, title, description, assigned_to, due_date):
+    def __init__(self, title, description, assigned_to, due_date, status= 'pending'):
         
         self.title = title
         self.description = description
@@ -16,3 +16,11 @@ class Task():
             raise DueDateError('Lo sentimos, la fecha no es vaida.')
         
         self.due_date = due_date
+        self.status = status
+        
+    def done(self):
+        self.status = 'Done'
+        
+    
+    def undone(self):
+        self.status = 'Pending'
